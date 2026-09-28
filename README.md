@@ -79,7 +79,6 @@ PDF
 📂 Repository & File Structure
 
 In compliance with the project guidelines requiring a clean, modular structure with 5–10 files:   
-PDF
 Plaintext
 
 student-academic-tracker/
@@ -233,37 +232,12 @@ Note: If class sample variance equals zero (σ=0), static fallback grade thresho
 
 To verify full application compliance, execute the test scenarios below:
 Test Case ID	Target Feature	Inputs	Expected Output / Behavior	Status
-TC-VAL-01	
+TC-VAL-01	String Validation Input: "45"	
 
-String Validation
-	Input: "45"	
-
-Validated successfully, converted to integer 45.
-	PASS
-TC-VAL-02	
-
-Invalid Input Protection[cite: 13]
-	Input: "abc"	Rejects input, displays error without crashing.	PASS
+Validated successfully, converted to integer 45  PASS
+TC-VAL-02	Invalid Input Protection Input: "abc"	Rejects input, displays error without crashing.	PASS
 TC-ATT-01	Single Attendance	Attended: 30, Total: 40	Computes 75.00%, Status: ELIGIBLE.	PASS
 TC-ATT-02	Attendance Failure	Attended: 20, Total: 40	Computes 50.00%, Status: NOT ELIGIBLE.	PASS
-TC-ATT-03	
-
-Boundary Guard
-	Attended: 50, Total: 40	
-
-Displays boundary error message (Attended > Total).
-	PASS
-TC-CGPA-01	
-
-Relative CGPA Engine
-	Marks: [85, 70, 60, 45], Credits: [4, 3, 3, 2]	
-
-Computes Mean = 65.00, Std Dev = 16.83, CGPA = 7.08.
-	PASS
-TC-CGPA-02	
-
-Zero Variance Guard
-	Marks: [80, 80, 80, 80]	
-
-Identifies σ=0, assigns Grade 'A' without throwing ZeroDivisionError.
-	PASS
+TC-ATT-03	Boundary Guard Attended: 50, Total: 40	Displays boundary error message (Attended > Total).PASS
+TC-CGPA-01	Relative CGPA EngineMarks: [85, 70, 60, 45], Credits: [4, 3, 3, 2]	Computes Mean = 65.00, Std Dev = 16.83, CGPA = 7.08.PASS
+TC-CGPA-02	Zero Variance Guard Marks: [80, 80, 80, 80]	 Identifies σ=0, assigns Grade 'A' without throwing ZeroDivisionError.PASS
