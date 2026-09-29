@@ -81,16 +81,16 @@ PDF
 In compliance with the project guidelines requiring a clean, modular structure with 5–10 files:   
 Plaintext
 
-student-academic-tracker/
+student-academic-tracker
 │
-├── main_.py             # CLI application entry point, menu navigation, and flow controller
-├── calculator.py       # Core attendance percentage computation routines
-├── CGPA_calculator.py  # Statistical engine (Mean, Std Dev, Z-Score, Grade mapping, CGPA)
-├── status_checker.py   # Attendance threshold logic (75% criteria check)
-├── explain_.py          # Step-by-step arithmetic breakdown printer
-├── valid_.py            # Custom string validation and numeric conversion parser
-├── statement.md          # Problem statement, project scope, and target users
-└── README.md             # Comprehensive project documentation
+── main_.py             # CLI application entry point, menu navigation, and flow controller
+── calculator.py       # Core attendance percentage computation routines
+── CGPA_calculator.py  # Statistical engine (Mean, Std Dev, Z-Score, Grade mapping, CGPA)
+── status_checker.py   # Attendance threshold logic (75% criteria check)
+── explain_.py          # Step-by-step arithmetic breakdown printer
+── valid_.py            # Custom string validation and numeric conversion parser
+── statement.md          # Problem statement, project scope, and target users
+── README.md             # Comprehensive project documentation
 
 ⚙️ Steps to Install & Run
 Prerequisites
